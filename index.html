@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Optometría L.C. | Prótesis Oculares a Medida en Nezahualcóyotl y Atizapán de Zaragoza</title>
+<meta name="description" content="Optometría L.C.: prótesis oculares pintadas a mano, diseños decorativos y prótesis que brillan en la oscuridad. Exámenes visuales, lentes correctivos y salud ocular en Nezahualcóyotl y Atizapán de Zaragoza, Edo. Méx. Agenda tu cita por WhatsApp.">
+<meta name="keywords" content="prótesis oculares, prótesis ocular a medida, prótesis oculares pintadas a mano, prótesis que brillan en la oscuridad, optometría Nezahualcóyotl, optometría Atizapán de Zaragoza, examen visual, lentes correctivos, ojo protésico México, optometrista Estado de México">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Optometría L.C.">
+<meta name="theme-color" content="#171717">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Optometría L.C. | Prótesis Oculares a Medida — Recupera la luz en tu mirada">
+<meta property="og:description" content="Prótesis oculares pintadas a mano, diseños decorativos y que brillan en la oscuridad. Optometristas creando miradas en Nezahualcóyotl y Atizapán de Zaragoza.">
+<meta property="og:image" content="imagenes/web/hero-mirada-macro.jpg">
+<meta property="og:locale" content="es_MX">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="imagenes/web/icon-square-512.png">
+<link rel="apple-touch-icon" href="imagenes/web/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =============================================
+     PRELOADER
+     ============================================= -->
+<div id="preloader" class="preloader" aria-hidden="true">
+  <div class="preloader__stage">
+    <div class="preloader__ring-wrap">
+      <svg class="preloader__ring" viewBox="0 0 140 140">
+        <circle class="preloader__ring-track" cx="70" cy="70" r="62" fill="none" stroke-width="1.5"/>
+        <circle class="preloader__ring-arc" cx="70" cy="70" r="62" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <img src="imagenes/web/icon-square-512.png" alt="" class="preloader__icon">
+    </div>
+    <div class="preloader__brand">
+      <span class="preloader__brand-main">OPTOMETRÍA <em>L.C.</em></span>
+      <span class="preloader__brand-sub">Optometristas creando miradas</span>
+    </div>
+    <div class="preloader__bar">
+      <div class="preloader__bar-fill" id="preloader-fill"></div>
+    </div>
+    <span class="preloader__label" id="preloader-label">Cargando...</span>
+  </div>
+  <div class="preloader__flash"></div>
+  <div class="preloader__shutter"></div>
+</div>
+
+<!-- =============================================
+     NAVBAR
+     ============================================= -->
+<header id="site-header">
+  <div class="container">
+    <div class="nav">
+      <a href="#inicio" class="nav__logo">
+        <img src="imagenes/web/logo-optometria-lc.png" alt="Optometría L.C. — Consultorio de Optometría y Prótesis Oculares" class="nav__logo-img">
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#servicios" data-nav>Servicios</a></li>
+        <li><a href="#porque" data-nav>Por qué elegirnos</a></li>
+        <li><a href="#proceso" data-nav>Proceso</a></li>
+        <li><a href="#galeria" data-nav>Galería</a></li>
+        <li><a href="#contacto" data-nav>Contacto</a></li>
+      </ul>
+
+      <div class="nav__right">
+        <a href="tel:+525575565562" class="nav__phone">
+          <small>Agenda tu cita</small>
+          <span><i class="fas fa-phone"></i> 55 7556 5562</span>
+        </a>
+        <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20agendar%20una%20evaluaci%C3%B3n%20en%20Optometr%C3%ADa%20L.C." target="_blank" rel="noopener" class="btn-nav-wa">
+          <i class="fab fa-whatsapp"></i> Agendar por WhatsApp
+        </a>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav__mobile" id="nav-mobile">
+    <a href="#servicios" data-nav><i class="fas fa-hand-holding-medical"></i> Servicios</a>
+    <a href="#porque" data-nav><i class="fas fa-star"></i> Por qué elegirnos</a>
+    <a href="#proceso" data-nav><i class="fas fa-route"></i> Proceso</a>
+    <a href="#galeria" data-nav><i class="fas fa-images"></i> Galería</a>
+    <a href="#nosotros" data-nav><i class="fas fa-heart"></i> Nosotros</a>
+    <a href="#preguntas" data-nav><i class="fas fa-circle-question"></i> Preguntas</a>
+    <a href="#contacto" data-nav><i class="fas fa-location-dot"></i> Contacto</a>
+    <div class="nav__mobile-ctas">
+      <a href="tel:+525575565562" class="nav__mobile-call"><i class="fas fa-phone"></i> Llamar: 55 7556 5562</a>
+      <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20agendar%20una%20evaluaci%C3%B3n%20en%20Optometr%C3%ADa%20L.C." target="_blank" rel="noopener" class="nav__mobile-wa"><i class="fab fa-whatsapp"></i> Escribir por WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section id="inicio" class="hero">
+
+  <canvas id="hero-particles" class="hero__particles" aria-hidden="true"></canvas>
+
+  <div class="hero__bg" id="hero-bg" aria-hidden="true">
+    <img src="imagenes/web/hero-mirada-macro.jpg" alt="" loading="eager" fetchpriority="high">
+    <div class="hero__bg-overlay"></div>
+  </div>
+
+  <div class="hero__orb hero__orb-1" aria-hidden="true"></div>
+  <div class="hero__orb hero__orb-2" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <div class="container hero__layout">
+
+    <div class="hero__copy">
+
+      <div class="hero__eyebrow" id="hero-eyebrow">
+        <span class="hero__eyebrow-dot"><span></span><span></span></span>
+        <span class="hero__eyebrow-text" id="hero-eyebrow-text" data-typewrite="Consultorio de Optometría y Prótesis Oculares"></span>
+      </div>
+
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__title-line" style="--d:0ms"><span class="hero__title-inner">Recupera</span></span>
+        <span class="hero__title-line" style="--d:110ms"><span class="hero__title-inner">la</span> <span class="hero__title-inner hero__title-shimmer">luz</span></span>
+        <span class="hero__title-line" style="--d:220ms"><span class="hero__title-inner">en tu mirada</span></span>
+      </h1>
+
+      <p class="hero__desc" id="hero-desc">
+        En <strong>Optometría L.C.</strong> diseñamos y pintamos a mano cada prótesis ocular hasta igualar el color, el brillo y la textura natural de tu mirada — con respaldo de formación <strong>UNAM</strong> y el trato humano que mereces al recuperar la confianza.
+      </p>
+
+      <div class="hero__ctas" id="hero-ctas">
+        <a href="https://wa.me/525575565562?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20de%20pr%C3%B3tesis%20ocular." target="_blank" rel="noopener" class="btn-primary" data-ripple>
+          <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+          <span class="btn-label">Agenda tu evaluación</span>
+          <span class="btn-shimmer"></span>
+        </a>
+        <a href="#proceso" class="btn-secondary">
+          <span class="btn-icon"><i class="fas fa-play"></i></span>
+          <span class="btn-label">Conoce el proceso</span>
+        </a>
+      </div>
+
+      <div class="hero__trust" id="hero-trust">
+        <div class="hero__trust-item" style="--d:0ms"><i class="fas fa-paintbrush"></i><span>Prótesis pintadas 100% a mano</span></div>
+        <div class="hero__trust-item" style="--d:90ms"><i class="fas fa-graduation-cap"></i><span>Formación con respaldo UNAM</span></div>
+        <div class="hero__trust-item" style="--d:180ms"><i class="fas fa-location-dot"></i><span>Atención en Neza y Atizapán</span></div>
+      </div>
+
+    </div>
+
+    <div class="hero__visual" id="hero-visual">
+      <div class="hero__badges" id="hero-badges">
+        <div class="hero__badge-item">
+          <span class="hero__badge-num">100%</span>
+          <span class="hero__badge-label">Hecho a mano</span>
+        </div>
+        <div class="hero__badge-div"></div>
+        <div class="hero__badge-item">
+          <i class="fas fa-moon"></i>
+          <span class="hero__badge-label">Brillan de noche</span>
+        </div>
+        <div class="hero__badge-div"></div>
+        <div class="hero__badge-item">
+          <span class="hero__badge-num">UNAM</span>
+          <span class="hero__badge-label">Respaldo académico</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero__divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M321,40c58-8,114-22,172-30,82-13,168-13,250,0C823,22,907,52,986,66c70,14,147,19,214,3V80H0V68C60,84,131,85,197,76Z"></path></svg>
+  </div>
+
+  <a href="#porque" class="hero__scroll" aria-label="Bajar a la siguiente sección">
+    <span></span>
+  </a>
+</section>
+
+
+<!-- =============================================
+     POR QUÉ ELEGIRNOS — 4 tarjetas numeradas
+     ============================================= -->
+<section id="porque" class="why">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Por qué elegirnos</span>
+      <h2 class="section-title">Precisión clínica con calidez humana</h2>
+      <p class="section-desc">Cuatro razones por las que familias en Nezahualcóyotl y Atizapán de Zaragoza confían su mirada a Optometría L.C.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="why__grid">
+      <div class="why__card reveal">
+        <span class="why__num">01</span>
+        <h3>Pintadas a mano, capa por capa</h3>
+        <p>Cada iris se pinta y sella a mano hasta igualar el color, las venillas y el brillo natural de tu ojo — no hay dos prótesis iguales.</p>
+      </div>
+      <div class="why__card reveal delay-1">
+        <span class="why__num">02</span>
+        <h3>Brillan en la oscuridad</h3>
+        <p>Diseños decorativos exclusivos con pigmentos que se iluminan al apagar la luz — una firma que solo encuentras aquí.</p>
+      </div>
+      <div class="why__card reveal delay-2">
+        <span class="why__num">03</span>
+        <h3>Formación con respaldo UNAM</h3>
+        <p>Optometristas formados con vínculo académico UNAM, combinando rigor clínico con seguimiento cercano en cada etapa.</p>
+      </div>
+      <div class="why__card reveal delay-3">
+        <span class="why__num">04</span>
+        <h3>Cerca de ti</h3>
+        <p>Atención en dos zonas del Estado de México — Nezahualcóyotl y Atizapán de Zaragoza — coordinada directo por WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     SERVICIOS
+     ============================================= -->
+<section id="servicios" class="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nuestros Servicios</span>
+      <h2 class="section-title">Prótesis oculares y salud visual, hechas a tu medida</h2>
+      <p class="section-desc">De la evaluación a la prótesis terminada: cada pieza se diseña, pinta y ajusta de forma individual para devolverte una mirada natural y segura.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="services__grid">
+
+      <div class="service-card reveal">
+        <div class="service-card__img">
+          <img src="imagenes/web/protesis-hiperrealista-detalle.jpg" alt="Prótesis ocular hiperrealista pintada a mano por Optometría L.C." loading="lazy">
+          <div class="service-card__overlay"></div>
+          <span class="service-card__badge">A medida</span>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon"><i class="fas fa-paintbrush"></i></div>
+          <h3>Prótesis Oculares a Medida</h3>
+          <p>Evaluación, adaptación y fabricación de tu prótesis ocular pintada a mano, igualando color y textura de tu ojo natural.</p>
+          <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20pr%C3%B3tesis%20oculares%20a%20medida." target="_blank" rel="noopener" class="service-card__link">Preguntar por WhatsApp <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card reveal delay-1">
+        <div class="service-card__img">
+          <img src="imagenes/web/disenos-decorativos-showcase.jpg" alt="Prótesis oculares decorativas con brillantina y pedrería de Optometría L.C." loading="lazy">
+          <div class="service-card__overlay"></div>
+          <span class="service-card__badge">Personalizado</span>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon"><i class="fas fa-gem"></i></div>
+          <h3>Diseños Decorativos</h3>
+          <p>Acabados con brillantina, pedrería y diseños especiales para expresar tu estilo en cada detalle de tu prótesis.</p>
+          <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1os%20decorativos%20de%20pr%C3%B3tesis%20ocular." target="_blank" rel="noopener" class="service-card__link">Preguntar por WhatsApp <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card reveal delay-2">
+        <div class="service-card__img">
+          <img src="imagenes/web/brillo-oscuridad-showcase.jpg" alt="Prótesis ocular que brilla en la oscuridad, servicio exclusivo de Optometría L.C." loading="lazy">
+          <div class="service-card__overlay"></div>
+          <span class="service-card__badge service-card__badge--glow"><i class="fas fa-moon"></i> Exclusivo</span>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon"><i class="fas fa-moon"></i></div>
+          <h3>Brillan en la Oscuridad</h3>
+          <p>Nuestro sello distintivo: prótesis con pigmentos fotoluminiscentes que se iluminan al apagar la luz.</p>
+          <a href="https://wa.me/525575565562?text=Hola%2C%20me%20interesan%20las%20pr%C3%B3tesis%20que%20brillan%20en%20la%20oscuridad." target="_blank" rel="noopener" class="service-card__link">Preguntar por WhatsApp <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Panel ancho: salud visual integral (fondo con imagen real + parallax) -->
+    <div class="service-panel reveal">
+      <div class="service-panel__bg" data-parallax>
+        <img src="imagenes/web/laboratorio-interior-fondo.jpg" alt="" loading="lazy">
+        <div class="service-panel__overlay"></div>
+      </div>
+      <div class="service-panel__content">
+        <span class="section-tag section-tag--light">Salud Visual Integral</span>
+        <h3>También cuidamos tu vista día a día</h3>
+        <ul class="service-panel__list">
+          <li><i class="fas fa-eye"></i><span>Exámenes visuales completos</span></li>
+          <li><i class="fas fa-glasses"></i><span>Lentes correctivos: miopía, hipermetropía, astigmatismo y presbicia</span></li>
+          <li><i class="fas fa-microscope"></i><span>Diagnóstico y manejo de cataratas, glaucoma y degeneración macular</span></li>
+          <li><i class="fas fa-person-walking-arrow-right"></i><span>Terapia visual y rehabilitación</span></li>
+          <li><i class="fas fa-graduation-cap"></i><span>Educación al paciente sobre cuidado ocular y de la prótesis</span></li>
+        </ul>
+        <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20servicios%20de%20salud%20visual." target="_blank" rel="noopener" class="btn-secondary btn-secondary--light">
+          <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+          <span class="btn-label">Consultar disponibilidad</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     PROCESO — 3 pasos
+     ============================================= -->
+<section id="proceso" class="process">
+  <div class="container">
+    <div class="process__grid">
+
+      <div class="process__media reveal-left">
+        <div class="process__media-main">
+          <img src="imagenes/web/laboratorio-fabricacion-proceso.jpg" alt="Etapas de fabricación de una prótesis ocular a medida en el laboratorio de Optometría L.C." loading="lazy">
+          <div class="process__media-badge">
+            <div class="process__media-badge-icon"><i class="fas fa-flask"></i></div>
+            <div class="process__media-badge-text">
+              <p>Laboratorio propio</p>
+              <p>Cada etapa hecha a mano</p>
+            </div>
+          </div>
+        </div>
+        <div class="process__media-float">
+          <img src="imagenes/web/detalle-pintura-manual.jpg" alt="Detalle de pintura manual de una prótesis ocular con referencia de color" loading="lazy">
+          <div class="process__media-float-label"><i class="fas fa-check-circle"></i> Color calibrado a mano</div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <span class="section-tag">Proceso Sencillo</span>
+        <h2 class="process__title">¿Cómo se elabora tu prótesis?</h2>
+        <p class="process__intro">Un proceso claro, humano y sin prisas — como debe ser cuando se trata de recuperar tu mirada.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">01</div>
+            <div class="step__body">
+              <h4>Contacto y evaluación</h4>
+              <p>Escríbenos por WhatsApp, cuéntanos tu caso y agenda tu evaluación con nuestro equipo de optometristas.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">02</div>
+            <div class="step__body">
+              <h4>Diseño y fabricación a mano</h4>
+              <p>Tomamos el molde, calibramos el tono exacto y pintamos tu prótesis a mano — con opción de diseños decorativos o brillo nocturno.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">03</div>
+            <div class="step__body">
+              <h4>Colocación y seguimiento</h4>
+              <p>Ajustamos la prótesis, te enseñamos su cuidado y damos seguimiento cercano a tu adaptación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     NÚMEROS
+     ============================================= -->
+<section id="numeros" class="stats">
+  <div class="stats__bg" data-parallax aria-hidden="true">
+    <img src="imagenes/web/laboratorio-trabajo-fondo.jpg" alt="" loading="lazy">
+    <div class="stats__bg-overlay"></div>
+  </div>
+
+  <div class="container stats__container">
+    <div class="section-header reveal">
+      <span class="section-tag section-tag--light">Optometría L.C. en cifras</span>
+      <h2 class="section-title section-title--light">Compromiso que se puede contar</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="stats__grid">
+      <div class="stat">
+        <div class="stat__num"><span data-target="2">0</span></div>
+        <div class="stat__label">Zonas de atención: Neza y Atizapán</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span data-target="8">0</span></div>
+        <div class="stat__label">Especialidades en salud visual</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span data-target="100" data-suffix="%">0%</span></div>
+        <div class="stat__label">Prótesis pintadas a mano</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span data-target="2">0</span></div>
+        <div class="stat__label">Líneas directas de WhatsApp</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     BRILLA EN LA OSCURIDAD — diferenciador
+     ============================================= -->
+<section id="brillo" class="glow">
+  <canvas id="glow-particles" class="glow__particles" aria-hidden="true"></canvas>
+  <div class="glow__orb"></div>
+  <div class="container">
+    <div class="glow__grid">
+      <div class="glow__media reveal-left">
+        <img src="imagenes/web/brillo-oscuridad-showcase.jpg" alt="Diseños de prótesis oculares que brillan en la oscuridad, servicio exclusivo de Optometría L.C." loading="lazy">
+        <div class="glow__media-ring"></div>
+      </div>
+      <div class="glow__content reveal-right">
+        <span class="section-tag section-tag--glow"><i class="fas fa-moon"></i> Nuestro sello distintivo</span>
+        <h2>Una mirada que <em>brilla</em> hasta en la oscuridad</h2>
+        <p>Símbolos, texturas y destellos pintados con pigmentos fotoluminiscentes que se iluminan al apagar la luz. Un diseño exclusivo de Optometría L.C. para quien quiere que su prótesis cuente su propia historia.</p>
+        <ul class="glow__list">
+          <li><i class="fas fa-check-circle"></i> Diseños exclusivos con brillantina y pedrería</li>
+          <li><i class="fas fa-check-circle"></i> Pigmentos que se iluminan en la oscuridad</li>
+          <li><i class="fas fa-check-circle"></i> 100% personalizado a tu estilo</li>
+        </ul>
+        <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20conocer%20los%20dise%C3%B1os%20que%20brillan%20en%20la%20oscuridad." target="_blank" rel="noopener" class="btn-glow">
+          Conoce los diseños disponibles <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     GALERÍA DE TRABAJOS REALES
+     ============================================= -->
+<section id="galeria" class="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Galería</span>
+      <h2 class="section-title">Trabajos reales, resultados reales</h2>
+      <p class="section-desc">Cada imagen es trabajo elaborado en nuestro laboratorio — sin fotografías genéricas ni de banco.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="gallery__grid">
+      <figure class="gallery__item reveal">
+        <img src="imagenes/web/resultado-mirada-clara.jpg" alt="Antes y después de la adaptación de una prótesis ocular con tono avellana" loading="lazy">
+        <figcaption>Igualamos tono, brillo y profundidad del iris</figcaption>
+      </figure>
+      <figure class="gallery__item reveal delay-1">
+        <img src="imagenes/web/resultado-precision-tecnica.jpg" alt="Calibración de color de una prótesis ocular antes de su acabado final" loading="lazy">
+        <figcaption>Precisión milimétrica en cada ajuste de color</figcaption>
+      </figure>
+      <figure class="gallery__item reveal delay-2">
+        <img src="imagenes/web/comparacion-precision-color.jpg" alt="Comparación de una prótesis ocular terminada junto al ojo natural del paciente" loading="lazy">
+        <figcaption>Comparación directa junto al ojo natural</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="imagenes/web/resultado-adaptacion-protesis.jpg" alt="Resultado de la adaptación de una prótesis ocular a medida" loading="lazy">
+        <figcaption>Adaptación cómoda y natural, paso a paso</figcaption>
+      </figure>
+      <figure class="gallery__item reveal delay-1">
+        <img src="imagenes/web/detalle-pintura-manual.jpg" alt="Detalle del pintado manual del iris de una prótesis ocular" loading="lazy">
+        <figcaption>Cada capa se pinta y sella a mano</figcaption>
+      </figure>
+      <figure class="gallery__item reveal delay-2">
+        <img src="imagenes/web/laboratorio-fabricacion-proceso.jpg" alt="Etapas del molde al acabado final de una prótesis ocular" loading="lazy">
+        <figcaption>Del molde a la prótesis terminada</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     NOSOTROS — valores + cita de marca
+     ============================================= -->
+<section id="nosotros" class="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nuestro compromiso</span>
+      <h2 class="section-title">Optometristas creando miradas</h2>
+      <p class="section-desc">Entendemos que recuperar la mirada es un proceso profundamente humano. Por eso combinamos técnica, arte y acompañamiento en cada visita.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="values__grid">
+      <div class="value-card reveal">
+        <div class="value-card__icon"><i class="fas fa-microscope"></i></div>
+        <h3>Precisión clínica</h3>
+        <p>Evaluamos cada caso con rigor óptico y formación con respaldo UNAM, dando seguimiento cercano en cada etapa.</p>
+      </div>
+      <div class="value-card reveal delay-1">
+        <div class="value-card__icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <h3>Calidez humana</h3>
+        <p>Sabemos que recuperar la mirada es un proceso emocional. Te acompañamos con empatía y respeto en todo momento.</p>
+      </div>
+      <div class="value-card reveal delay-2">
+        <div class="value-card__icon"><i class="fas fa-palette"></i></div>
+        <h3>Personalización total</h3>
+        <p>De la forma al brillo: cada prótesis se adapta a tu anatomía y a tu forma de expresarte.</p>
+      </div>
+    </div>
+
+    <div class="quote-banner reveal">
+      <div class="quote-banner__bg" data-parallax>
+        <img src="imagenes/web/laboratorio-interior-fondo.jpg" alt="" loading="lazy">
+        <div class="quote-banner__overlay"></div>
+      </div>
+      <div class="quote-banner__content">
+        <i class="fas fa-quote-left quote-banner__icon"></i>
+        <p class="quote-banner__text">"Recupera la luz en tu mirada: cada prótesis que entregamos lleva precisión clínica, arte hecho a mano y la certeza de devolver confianza a quien la usa."</p>
+        <div class="quote-banner__author">
+          <div class="quote-banner__author-dot">LC</div>
+          <span>Equipo Optometría L.C.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section id="preguntas" class="faq">
+  <div class="container">
+    <div class="faq__layout">
+
+      <div class="faq__media reveal-left">
+        <div class="faq__media-wrap">
+          <img src="imagenes/web/protesis-hiperrealista-detalle.jpg" alt="Prótesis ocular terminada con acabado hiperrealista" loading="lazy">
+          <div class="faq__media-badge">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>55 7556 5562</strong>
+              <span>Línea directa de WhatsApp</span>
+              <span class="faq__media-badge-sub">También: 55 3052 5873</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq__col reveal-right">
+        <div class="faq__col-head">
+          <span class="section-tag">Preguntas Frecuentes</span>
+          <h2 class="section-title section-title--left">Resolvemos tus dudas</h2>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq__item">
+            <button class="faq__btn">
+              <span>¿Qué es una prótesis ocular y quién la necesita?</span>
+              <span class="faq__icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq__panel">
+              <p>Es una pieza hecha a medida que reemplaza estéticamente un ojo perdido o afectado por cirugía, trauma o enfermedad, devolviendo simetría y naturalidad a la mirada. La evaluamos y fabricamos según cada caso particular.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__btn">
+              <span>¿Las prótesis son pintadas a mano? ¿Se ven naturales?</span>
+              <span class="faq__icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq__panel">
+              <p>Sí, cada prótesis se pinta a mano capa por capa hasta igualar el color, las venillas y el brillo de tu ojo natural, logrando un resultado hiperrealista y personalizado.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__btn">
+              <span>¿Ofrecen diseños decorativos o que brillen en la oscuridad?</span>
+              <span class="faq__icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq__panel">
+              <p>Sí. Además de la prótesis con apariencia natural, hacemos diseños decorativos con brillantina y pedrería, y nuestra especialidad exclusiva: prótesis con pigmentos que brillan en la oscuridad.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__btn">
+              <span>¿Dónde tienen atención?</span>
+              <span class="faq__icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq__panel">
+              <p>Atendemos en Nezahualcóyotl y Atizapán de Zaragoza, Estado de México. Escríbenos por WhatsApp y coordinamos contigo el lugar y horario más conveniente para tu cita.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__btn">
+              <span>¿Cómo agendo una cita o pido una cotización?</span>
+              <span class="faq__icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq__panel">
+              <p>Directamente por WhatsApp al 55 7556 5562 o 55 3052 5873. Cuéntanos tu caso y te orientamos sin compromiso sobre el proceso y siguientes pasos.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__btn">
+              <span>¿Qué otros servicios de salud visual ofrecen?</span>
+              <span class="faq__icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq__panel">
+              <p>Exámenes visuales completos, lentes correctivos para miopía, hipermetropía, astigmatismo y presbicia, diagnóstico de enfermedades oculares y terapia visual y rehabilitación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CTA FINAL
+     ============================================= -->
+<section id="cta" class="cta">
+  <div class="cta__bg" data-parallax aria-hidden="true">
+    <img src="imagenes/web/hero-mirada-macro.jpg" alt="" loading="lazy">
+    <div class="cta__bg-overlay"></div>
+  </div>
+  <canvas id="cta-particles" class="cta__particles" aria-hidden="true"></canvas>
+
+  <div class="container cta__container">
+    <div class="cta__icon"><i class="fas fa-eye"></i></div>
+    <h2>Tu mirada merece recuperar su brillo</h2>
+    <p>Agenda tu evaluación hoy mismo y da el primer paso hacia una prótesis ocular hecha exclusivamente para ti.</p>
+    <div class="cta__btns">
+      <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20de%20pr%C3%B3tesis%20ocular." target="_blank" rel="noopener" class="btn-cta-wa">
+        <i class="fab fa-whatsapp"></i> Escribir al 55 7556 5562
+      </a>
+      <a href="https://wa.me/525530525873?text=Hola%2C%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20de%20pr%C3%B3tesis%20ocular." target="_blank" rel="noopener" class="btn-cta-phone">
+        <i class="fab fa-whatsapp"></i> Escribir al 55 3052 5873
+      </a>
+    </div>
+    <p class="cta__note"><i class="fas fa-graduation-cap"></i> Formación con respaldo UNAM · Atención en Nezahualcóyotl y Atizapán de Zaragoza</p>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CONTACTO
+     ============================================= -->
+<section id="contacto" class="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Contacto</span>
+      <h2 class="section-title">Hablemos de tu mirada</h2>
+      <p class="section-desc">Cuéntanos tu caso y te respondemos directo por WhatsApp — sin filas de espera ni formularios eternos.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact__grid">
+
+      <div class="contact__info reveal-left">
+        <div class="contact__info-item">
+          <i class="fab fa-whatsapp"></i>
+          <div><span class="main">55 7556 5562</span><span class="sub">WhatsApp / línea directa</span></div>
+        </div>
+        <div class="contact__info-item">
+          <i class="fab fa-whatsapp"></i>
+          <div><span class="main">55 3052 5873</span><span class="sub">WhatsApp / línea directa</span></div>
+        </div>
+        <div class="contact__info-item">
+          <i class="fas fa-location-dot"></i>
+          <div><span class="main">Nezahualcóyotl y Atizapán de Zaragoza</span><span class="sub">Estado de México — confirma el lugar exacto por WhatsApp</span></div>
+        </div>
+        <div class="contact__info-item">
+          <i class="fas fa-clock"></i>
+          <div><span class="main">Cita previa</span><span class="sub">Agenda tu horario directo por WhatsApp</span></div>
+        </div>
+        <div class="contact__info-item">
+          <i class="fas fa-globe"></i>
+          <div><span class="main">optometrialc.com</span><span class="sub">Sitio web</span></div>
+        </div>
+        <div class="contact__info-item">
+          <i class="fab fa-facebook-f"></i>
+          <div><span class="main">Prótesis Oculares L.C.</span><span class="sub">Síguenos en Facebook</span></div>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps?q=Pr%C3%B3tesis%20Oculares%20LC%20Optometr%C3%ADa%2C%20Nezahualc%C3%B3yotl%2C%20Estado%20de%20M%C3%A9xico&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Zona de atención de Optometría L.C. en el Estado de México"></iframe>
+        </div>
+      </div>
+
+      <form class="contact__form reveal-right" id="contact-form" novalidate>
+        <h3>Solicita tu cotización</h3>
+        <div class="form-row">
+          <label for="cf-name">Nombre</label>
+          <input type="text" id="cf-name" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-phone">Teléfono / WhatsApp</label>
+          <input type="tel" id="cf-phone" name="telefono" placeholder="55 0000 0000" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-service">Servicio de interés</label>
+          <select id="cf-service" name="servicio">
+            <option value="Prótesis ocular a medida">Prótesis ocular a medida</option>
+            <option value="Diseño decorativo">Diseño decorativo</option>
+            <option value="Prótesis que brilla en la oscuridad">Prótesis que brilla en la oscuridad</option>
+            <option value="Examen visual / lentes correctivos">Examen visual / lentes correctivos</option>
+            <option value="Otro / no estoy seguro">Otro / no estoy seguro</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="cf-msg">Mensaje</label>
+          <textarea id="cf-msg" name="mensaje" rows="3" placeholder="Cuéntanos brevemente tu caso"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-primary--block" data-ripple>
+          <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+          <span class="btn-label">Solicitar cotización por WhatsApp</span>
+          <span class="btn-shimmer"></span>
+        </button>
+        <p class="contact__form-note"><i class="fas fa-lock"></i> Tu mensaje se abre directo en WhatsApp — no compartimos tus datos con terceros.</p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="imagenes/web/logo-optometria-lc.png" alt="Optometría L.C." class="footer__logo">
+        <p class="footer__tagline">Optometristas creando miradas. Recupera la luz en tu mirada.</p>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/share/18ar1sQmaA/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/525575565562" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://optometrialc.com" target="_blank" rel="noopener" aria-label="Sitio web"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Prótesis a medida</a></li>
+          <li><a href="#brillo">Brillan en la oscuridad</a></li>
+          <li><a href="#servicios">Diseños decorativos</a></li>
+          <li><a href="#servicios">Exámenes visuales</a></li>
+          <li><a href="#servicios">Lentes correctivos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <div class="footer__contact-item"><i class="fab fa-whatsapp"></i><div><span class="main">55 7556 5562</span></div></div>
+        <div class="footer__contact-item"><i class="fab fa-whatsapp"></i><div><span class="main">55 3052 5873</span></div></div>
+        <div class="footer__contact-item"><i class="fas fa-location-dot"></i><div><span class="main">Nezahualcóyotl / Atizapán de Zaragoza</span></div></div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Optometría L.C. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Botón flotante WhatsApp -->
+<div id="float-btns">
+  <a href="https://wa.me/525575565562?text=Hola%2C%20quiero%20agendar%20una%20evaluaci%C3%B3n%20en%20Optometr%C3%ADa%20L.C." target="_blank" rel="noopener" class="float-wa" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-wa-label">Agenda tu cita</span>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
